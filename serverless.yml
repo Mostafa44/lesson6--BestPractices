@@ -92,7 +92,8 @@ custom:
       port: 8000
       inMemory: true
       migrate: true
-
+    stages: # Add this section of the config
+      - dev
   documentation:
     api:
       info:

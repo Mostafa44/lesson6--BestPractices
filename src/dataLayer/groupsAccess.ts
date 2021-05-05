@@ -1,8 +1,9 @@
-import * as AWS  from 'aws-sdk'
-import * as AWSXRay from 'aws-xray-sdk'
+import * as AWS from 'aws-sdk'
+//import * as AWSXRay from 'aws-xray-sdk'
 import { DocumentClient } from 'aws-sdk/clients/dynamodb'
 
-const XAWS = AWSXRay.captureAWS(AWS)
+//const XAWS = AWSXRay.captureAWS(AWS) // debug tool to keep track of user requests
+const XAWS = AWS // debug tool to keep track of user requests
 
 import { Group } from '../models/Group'
 
